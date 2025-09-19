@@ -84,7 +84,7 @@ const App = () => {
       {
         winner && <h1 onClick={restart} className={winner}>{winner !== 'draw' ? winner + " WIN!" : winner}</h1>
       }
-      
+      <h2>Current player: {currentPlayer}</h2>
       <section className="gameField">
         {
           gameField.map((row, rowIdx) => {
