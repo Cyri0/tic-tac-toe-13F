@@ -85,8 +85,11 @@ body{
 }
 
 h2{
-  color: var(--mygray);
+  color: var(--mygrayshadow);
   text-align: center;
   font-family: monospace;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

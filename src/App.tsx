@@ -84,7 +84,9 @@ const App = () => {
       {
         winner && <h1 onClick={restart} className={winner}>{winner !== 'draw' ? winner + " WIN!" : winner}</h1>
       }
-      <h2>Current player: {currentPlayer}</h2>
+      <h2>Current player: {currentPlayer === 'o' ? 
+      <i style={{color: "var(--myorange)"}} className="fa-solid fa-o"></i> :
+      <i style={{color: "var(--myblue)"}}  className="fa-solid fa-xmark"></i>}</h2>
       <section className="gameField">
         {
           gameField.map((row, rowIdx) => {
